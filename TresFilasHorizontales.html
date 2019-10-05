@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>"Tres bandas horizontales"</title>
+    <meta charset="utf-8">
+    <meta name="author" content="José Luis Sánchez de la Rosa">    
+    <meta name="description" content="Plantillas básicas de HTML y CSS para aprender a ">
+    <meta name="keywords" content="HTML,CSS,JavaScript, Layout, cabecera, header, footer, DIV, clases HTML, HTML classes">
+    <style>
+        /* Quitamos márgenes y paddings de todo el documento*/
+        *{margin: 0;
+        padding:0;}
+        
+        /* Estilo del body*/
+        body{background-color: antiquewhite;}
+        
+        /* Estilo de la cabecera */
+        .cabecera{background-color: lightcoral;
+        width:100vw;
+        height: 20vh;
+        float: left;}
+        
+        /* Estilo de la zona intermedia entre la cabecera y el pie de página*/
+        .resto{background-color: darkseagreen;
+        width: 100vw;
+        height: 60vh;
+        float: left;}
+        
+        /* Estilo del pie de página */
+        .footer{background-color: black;
+        color:white;
+            width: 100vw;
+            height: 20vh;
+            float: left;
+        }
+        /* Estilo de los elementos HTML */
+        H1{font-size: 60px;float: left;}
+    </style>
+    
+</head>
+<body>
+    <div    class="container">
+        <div class="cabecera">
+            <a href="index.html"><H1>JLSR</H1></a>
+        <H1>       Layout con tres bandas horizontales</H1>
+        
+        <p></p>
+        <div class="menu">
+            <ul>
+            <li>Tres bandas horizontales</li>
+            <li>Tres bandas verticales</li>
+            <li>Cabecera, footer y mitad dividida en tres bandas verticales</li>
+            </ul>
+        </div>
+        </div>
+        <DIV class="resto">
+            <H2> Pasos básicos en la creación de un layout</H2>
+            <p></p>
+            <H2> Estructura de esta página</H2>
+        <p>Ésta página tiene una estructura muy sencilla. <p>Un div contaienr que contiene</p>
+            <ol>
+                <li>Un DIV de clase cabecera para el LOGO o TITULAR </li>
+                <li>Un DIV de tipo menu con tres opciones</li>
+                <li> Un DIV de clase "resto" que contiene la parte informativa de la página</li>
+            </ol>
+        </DIV>
+        <div class="footer">
+        <p> Pie de página</p>
+        </div>
+    </div>
+</body>
+</html>

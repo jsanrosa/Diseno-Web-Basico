@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>"Layouts Basicos"</title>
+    <meta charset="utf-8">
+    <meta name="author" content="José Luis Sánchez de la Rosa">    
+    <style>
+        *{margin: 0;
+        padding:0;}
+        body{background-color: antiquewhite;}
+        .cabecera{background-color: lightcoral;}
+        .menu{background-color: darkseagreen;}
+        .resto{background-color:azure;
+        margin-left: 5v;
+        padding-left: 5vw;}
+        .codigo{
+            width:20vw;
+            margin-left: 5vw;
+            border: 1px solid black;
+        }
+        H1{font-size: 60px;}
+        .footer{background-color: black;
+        color:white;
+        width:100vw;
+        height: 10vh;
+        float:left;}
+    </style>
+</head>
+<body>
+    <!--- La clase container contiene todo el HTML de nuestra página-->
+    <div    class="container">
+        <div class="cabecera">
+        <H1>Creación de Layouts básicos</H1>
+    </div>        
+    <div class="menu">
+            <ul>
+                <li><a href="TresFilasHorizontales.html">Tres bandas horizontales</a></li>
+            <li>Tres bandas verticales</li>
+            <li>Cabecera, footer y mitad dividida en tres bandas verticales</li>
+            </ul>
+        </div>
+        <DIV class="resto">
+        <H2> 1- Estructura básica de un documento HTML</H2>
+        <p> En primer lugar tenemos que tener clara la estructura básica de una página HTML</p>
+            <DIV class="codigo">
+            <pre><code>
+<p>    &lt!DOCTYPE html&gt</p>
+<p>    &lthtml&gt</p>
+<p>        &lthead&gt</p>
+<p>        /&lthead&gt   </p>         
+<p>        &ltbody&gt</p>
+<p>        /&ltbody&gt   </p>         
+<p>    /&lthtml&gt   </p>                     
+            </code></pre>
+        </DIV>        
+        <h2>2- ¿Qué información va en &lthead&gt?</h2>
+            <p> En el &lthead&gt se escribe información (metadatos) para ser utilizada por los buscadores y los navegadores. Por ejemplo, el título de la página, el autor, las palabras clave, etc...</p>
+        <h2>3- ¿Qué información va en el &ltbody&gt?</h2>
+            <p>Sólo puede haber un elemento &ltbody&gt en un documento HTML. Contiene la información que se quiere mostrar en la página web.  </p>
+        <h2>4- ¿Cómo hacer para dividir el espacio de una página web en varias partes?</h2>
+            <p> En primer lugar hay que agrupar todos aquellos elementos que tengan que ir juntos y a los que se les va a aplicar un estilo común. Todas las páginas web tienen al menos las siguientes divisiones:
+            </p>
+            <ol>
+                <li>Una cabecera que suele contener el LOGO y un menú principal</li>
+                <li> Una zona central que contiene</li>
+                <li>Un footer o pie de página que contiene información como el copyright e información sobre el autor o la compañía.</li>
+            </ol>
+        <h2>5- ¿Cómo agrupo elementos para darles un estilo común?</h2>
+        <p> La manera más habitual es la utilización de un elemento &ltDIV&gt. Éste solo sirve de "caja" para agrupar un contenido. Utilizando CSS podemos darle  un formato común a todos los elementos DIV. Si les aplicamos una clase o un identificador podemos particularizar sus propiedades de forma que la cabecera tenga un formato distinto que el footer, por ejemplo.</p>
+            <h2>6- ¿Porqué en esta página se ve una zona en color beige debajo del footer?</h2>
+            <p> He dejado esa zona a propósito. Es el fondo (background) del body. Para que no ocurra hay que ajustar bien las propiedades de ancho (width) y alto (height) de cada DIV. La suma de alturas de todos los DIV debe sumar 100 o más.</p>
+        </DIV>
+        <div class="footer">
+        Autor: José Luis Sánchez de la Rosa
+        2019    
+        </div>
+    </div>
+    <p> Esta zona pertenece al body pero está fuera de la clase "container". No hemos ajustado el tamaño de la clase container. Las clases "cabecera" y "resto" no tienen asignado un alto (height), por lo que al no sumar 100,se ve el fondo del body en aquella parte no cubierta por los DIV anteriores.</p>
+</body>
+</html>
